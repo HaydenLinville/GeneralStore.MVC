@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "General Store";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p>@Html.ActionLink("Learn More About Us", "About") </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br />
+            Come browse our products and see what we have for you.
+        </p>
+        <p>@Html.ActionLink("Check Products", "Index", "Product", null, new {@class = "btn btn-primary btn-large"})</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Customers</h2>
+        <p>We have lots of Regular Customers that shop at our General Store. If you would like to see our Customers click on Check Customers below. </p>
+        <p>@Html.ActionLink("Check Customers", "Index", "Customer", null, new {@class = "btn btn-primary btn-large"})</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Transactions</h2>
+        <p>All transactions are recorded at time of purchase with both Customer and Product. If you want to see all Transactions click on Check Transactions below.</p>
+        <p>@Html.ActionLink("Check Transactions", "Index", "Transaction", null, new {@class="btn btn-primary btn-large"})</p>
+    </div>
+</div>
